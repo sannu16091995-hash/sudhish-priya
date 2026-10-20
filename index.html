@@ -290,29 +290,14 @@ body{color:var(--ink);background:#fff1d8}
   <div class="wrap nav-inner">
     <a class="brand" href="#top" style="text-decoration:none">Sudhish & Priya</a>
     <div class="navlinks"><a href="#invitation">Invitation</a><a href="#families">Families</a><a href="#events">Celebrations</a><a href="#venue">Venue</a></div>
-    <span class="music-title">♫ Uttarakhand Mangal Geet</span>
+    <button class="music" id="musicToggle" type="button" aria-label="Play wedding music" aria-pressed="false">MUSIC</button>
   </div>
 </nav>
 <main>
 <section class="section center" id="invitation">
   <div class="wrap">
     <div class="ganesha-panel" role="img" aria-label="Decorative Lord Ganesha illustration">
-      <svg class="ganesha-art" viewBox="0 0 220 220" aria-hidden="true">
-        <circle cx="110" cy="105" r="83" fill="#f6e4bd" stroke="#b68a42" stroke-width="2"/>
-        <circle cx="110" cy="105" r="72" fill="none" stroke="#d5b36c" stroke-width="1.5" stroke-dasharray="3 5"/>
-        <path d="M82 70 Q60 47 49 76 Q43 101 76 105 M138 70 Q160 47 171 76 Q177 101 144 105" fill="#d9a75a" stroke="#81501f" stroke-width="3"/>
-        <path d="M82 70 Q110 48 138 70 L146 106 Q144 140 110 148 Q76 140 74 106Z" fill="#e9c27d" stroke="#81501f" stroke-width="3"/>
-        <path d="M88 75 Q110 58 132 75 L126 91 Q110 101 94 91Z" fill="#fff0ca" stroke="#b68a42" stroke-width="2"/>
-        <path d="M105 90 Q95 106 104 117 Q111 125 105 139 Q101 151 116 156 Q134 158 132 141 Q130 130 119 127 Q112 124 117 113 L119 91" fill="#f5e0ad" stroke="#81501f" stroke-width="4" stroke-linejoin="round"/>
-        <circle cx="94" cy="105" r="4" fill="#4e171d"/><circle cx="126" cy="105" r="4" fill="#4e171d"/>
-        <path d="M89 119 Q110 131 131 119" fill="none" stroke="#b68a42" stroke-width="2"/>
-        <path d="M96 58 L110 35 L124 58Z" fill="#b68a42" stroke="#81501f" stroke-width="2"/>
-        <circle cx="110" cy="31" r="5" fill="#b68a42"/>
-        <path d="M66 154 Q51 174 70 183 L93 179 L110 194 L127 179 L150 183 Q169 174 154 154" fill="#d9a75a" stroke="#81501f" stroke-width="3"/>
-        <path d="M76 177 Q110 190 144 177" fill="none" stroke="#81501f" stroke-width="2"/>
-        <path d="M62 137 Q43 131 45 151 Q49 163 70 157 M158 137 Q177 131 175 151 Q171 163 150 157" fill="none" stroke="#b68a42" stroke-width="5" stroke-linecap="round"/>
-        <path d="M98 70 L110 81 L122 70" fill="none" stroke="#b68a42" stroke-width="2"/>
-      </svg>
+      <svg class="ganesha-art" viewBox="0 0 220 220" aria-hidden="true"><circle cx="110" cy="105" r="83" fill="#f6e4bd" stroke="#b68a42" stroke-width="2"/><circle cx="110" cy="105" r="72" fill="none" stroke="#d5b36c" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M82 70 Q60 47 49 76 Q43 101 76 105 M138 70 Q160 47 171 76 Q177 101 144 105" fill="#b51e35" stroke="#81501f" stroke-width="3"/><path d="M82 70 Q110 48 138 70 L146 106 Q144 140 110 148 Q76 140 74 106Z" fill="#e9c27d" stroke="#81501f" stroke-width="3"/><path d="M88 75 Q110 58 132 75 L126 91 Q110 101 94 91Z" fill="#fff0ca" stroke="#b68a42" stroke-width="2"/><path d="M105 90 Q95 106 104 117 Q111 125 105 139 Q101 151 116 156 Q134 158 132 141 Q130 130 119 127 Q112 124 117 113 L119 91" fill="#f5e0ad" stroke="#81501f" stroke-width="4" stroke-linejoin="round"/><circle cx="94" cy="105" r="4" fill="#4e171d"/><circle cx="126" cy="105" r="4" fill="#4e171d"/><path d="M89 119 Q110 131 131 119" fill="none" stroke="#b68a42" stroke-width="2"/><path d="M96 58 L110 35 L124 58Z" fill="#b68a42" stroke="#81501f" stroke-width="2"/><circle cx="110" cy="31" r="5" fill="#b68a42"/><path d="M66 154 Q51 174 70 183 L93 179 L110 194 L127 179 L150 183 Q169 174 154 154" fill="#d9a75a" stroke="#81501f" stroke-width="3"/><path d="M76 177 Q110 190 144 177" fill="none" stroke="#81501f" stroke-width="2"/><path d="M62 137 Q43 131 45 151 Q49 163 70 157 M158 137 Q177 131 175 151 Q171 163 150 157" fill="none" stroke="#b68a42" stroke-width="5" stroke-linecap="round"/></svg>
       <div class="ganesha-caption">श्री गणेशाय नमः</div>
     </div>
     <div class="eyebrow">With divine blessings</div><div class="ornament">❦ ✧ ❦</div>
@@ -332,11 +317,11 @@ body{color:var(--ink);background:#fff1d8}
     <p class="section-intro">A little glimpse of the warmth, colour and beauty that inspire our celebration.</p>
     <div class="wedding-photo-gallery">
       <figure class="photo-feature">
-        <img src="https://travelogyindia.b-cdn.net/storage/app/upload/jw-marriott-mussoorie.jpg" alt="Floral wedding mandap with Himalayan mountain views" loading="lazy">
+        <img src="https://travelogyindia.b-cdn.net/storage/app/upload/jw-marriott-mussoorie.jpg" alt="Floral wedding mandap with Himalayan mountain views" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Cdefs%3E%3ClinearGradient id=%22s%22 x2=%220%22 y2=%221%22%3E%3Cstop stop-color=%22%23f7c887%22/%3E%3Cstop offset=%221%22 stop-color=%22%23f8e9c8%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22900%22 height=%22600%22 fill=%22url(%23s)%22/%3E%3Cpath d=%22M0 400L130 190 250 320 390 120 540 320 690 165 900 390V600H0Z%22 fill=%22%238a7768%22/%3E%3Cpath d=%22M0 450L180 310 320 400 500 265 690 420 820 300 900 380V600H0Z%22 fill=%22%23b7a087%22/%3E%3Cpath d=%22M0 490Q250 460 450 495T900 490V600H0Z%22 fill=%22%235d6970%22/%3E%3Ctext x=%22450%22 y=%22555%22 text-anchor=%22middle%22 font-size=%2228%22 fill=%22%23fff4dc%22 font-family=%22Georgia%22%3EHimalayan Mountain Views%3C/text%3E%3C/svg%3E'">
         <figcaption>Where traditions meet the mountains</figcaption>
       </figure>
       <figure class="photo-secondary">
-        <img src="https://shubhkaryavenues.com/assets/hero_crimson.png" alt="Royal red and gold wedding mandap" loading="lazy">
+        <img src="https://shubhkaryavenues.com/assets/hero_crimson.png" alt="Royal red and gold wedding mandap" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 x2=%220%22 y2=%221%22%3E%3Cstop stop-color=%22%23500d1a%22/%3E%3Cstop offset=%221%22 stop-color=%22%237a1d2c%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22900%22 height=%22600%22 fill=%22url(%23b)%22/%3E%3Cpath d=%22M80 600V140Q450 -40 820 140V600%22 fill=%22none%22 stroke=%22%23d7b15e%22 stroke-width=%2220%22/%3E%3Cpath d=%22M120 600V180Q450 5 780 180V600%22 fill=%22none%22 stroke=%22%23f2d994%22 stroke-width=%226%22/%3E%3Cpath d=%22M120 180L230 280 340 180 450 280 560 180 670 280 780 180%22 fill=%22none%22 stroke=%22%23d7b15e%22 stroke-width=%2212%22/%3E%3Cpath d=%22M200 600V310M700 600V310M200 310Q450 180 700 310%22 fill=%22none%22 stroke=%22%23e9c875%22 stroke-width=%2216%22/%3E%3Cg fill=%22%23f5e2b7%22%3E%3Ccircle cx=%22200%22 cy=%22220%22 r=%2220%22/%3E%3Ccircle cx=%22235%22 cy=%22245%22 r=%2215%22/%3E%3Ccircle cx=%22700%22 cy=%22220%22 r=%2220%22/%3E%3Ccircle cx=%22665%22 cy=%22245%22 r=%2215%22/%3E%3C/g%3E%3Ctext x=%22450%22 y=%22535%22 text-anchor=%22middle%22 font-size=%2232%22 fill=%22%23f8e8c0%22 font-family=%22Georgia%22%3ERoyal Red &amp; Gold Mandap%3C/text%3E%3C/svg%3E'">
         <figcaption>A celebration wrapped in maroon and gold</figcaption>
       </figure>
     </div>
@@ -391,12 +376,7 @@ body{color:var(--ink);background:#fff1d8}
  </div>
 </section>
 </main>
-<div id="backgroundMusic" aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);pointer-events:none">
-  <iframe title="Wedding background music" width="1" height="1"
-    src="https://www.youtube-nocookie.com/embed/tyyjqZUZTO4?start=38&autoplay=1&playsinline=1&controls=0&rel=0"
-    allow="autoplay; encrypted-media; picture-in-picture"
-    referrerpolicy="strict-origin-when-cross-origin"></iframe>
-</div>
+<div id="backgroundMusic" aria-label="Wedding music player" style="position:fixed;left:-10px;bottom:0;width:1px;height:1px;opacity:.01;overflow:hidden;pointer-events:none" aria-hidden="true"><div id="youtubePlayer"></div></div>
 <footer class="footer"><div class="script">Sudhish & Priya</div><p>4 December 2026 · With love, blessings & togetherness</p><p style="font-size:.75rem;letter-spacing:.12em">॥ शुभ विवाह ॥</p><a href="#top" style="font-size:.8rem;text-decoration:none">Back to the beginning ↑</a></footer>
 <script>
 const $=id=>document.getElementById(id);
@@ -430,5 +410,22 @@ $('calendarLink').href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}
   }
 })();
 
+
+// MUSIC button: YouTube track starts at 00:38 after the visitor taps MUSIC.
+let weddingPlayer=null, musicReady=false, musicPlaying=false, pendingMusicAction=false;
+const musicButton=document.getElementById('musicToggle');
+function setMusicButton(playing){musicPlaying=playing;musicButton.textContent='MUSIC';musicButton.setAttribute('aria-pressed',String(playing));musicButton.setAttribute('aria-label',playing?'Pause wedding music':'Play wedding music');musicButton.title=playing?'Tap MUSIC to pause':'Tap MUSIC to play from 0:38';}
+function onYouTubeIframeAPIReady(){
+ weddingPlayer=new YT.Player('youtubePlayer',{width:'1',height:'1',videoId:'tyyjqZUZTO4',playerVars:{start:38,playsinline:1,controls:0,disablekb:1,fs:0,rel:0},events:{
+  onReady:()=>{musicReady=true;if(pendingMusicAction){pendingMusicAction=false;weddingPlayer.seekTo(38,true);weddingPlayer.playVideo();}},
+  onStateChange:e=>{if(e.data===YT.PlayerState.PLAYING)setMusicButton(true);if(e.data===YT.PlayerState.PAUSED||e.data===YT.PlayerState.ENDED)setMusicButton(false);},
+  onError:()=>{pendingMusicAction=false;setMusicButton(false);musicButton.title='YouTube could not play this track. Check connection or browser restrictions.';}
+ }});
+}
+window.onYouTubeIframeAPIReady=onYouTubeIframeAPIReady;
+musicButton.addEventListener('click',()=>{
+ if(!musicReady){pendingMusicAction=true;musicButton.title='Loading music player…';if(!document.getElementById('youtube-api-script')){const s=document.createElement('script');s.id='youtube-api-script';s.src='https://www.youtube.com/iframe_api';s.onerror=()=>{pendingMusicAction=false;musicButton.title='Could not load YouTube. Check your connection.';};document.head.appendChild(s);}return;}
+ if(musicPlaying){weddingPlayer.pauseVideo();setMusicButton(false);}else{weddingPlayer.seekTo(38,true);weddingPlayer.playVideo();}
+});
 </script>
 </body></html>
