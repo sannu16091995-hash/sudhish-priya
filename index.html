@@ -206,6 +206,11 @@ body{color:#2c1714}
 .wedding-photo-gallery figure{margin:0;position:relative;overflow:hidden;border:1px solid #b88c3e;background:#f4e3bf;box-shadow:0 14px 36px rgba(46,20,12,.18);min-height:260px}
 .wedding-photo-gallery img{width:100%;height:100%;min-height:260px;object-fit:cover;display:block;transition:transform .7s ease}
 .wedding-photo-gallery figure:hover img{transform:scale(1.04)}
+.wedding-photo-gallery figure{min-height:360px}
+.wedding-photo-gallery img{height:100%;min-height:360px;object-fit:contain;background:#fff8e9}
+.photo-feature img,.photo-secondary img{object-position:center}
+.wedding-photo-gallery figcaption{font-size:clamp(1rem,2vw,1.2rem);line-height:1.35}
+@media(max-width:720px){.wedding-photo-gallery figure,.wedding-photo-gallery img{min-height:0;height:auto;aspect-ratio:4/3}.wedding-photo-gallery img{object-fit:contain}.wedding-photo-gallery figcaption{padding:36px 14px 13px;font-size:1rem}}
 .wedding-photo-gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 18px 15px;background:linear-gradient(transparent,rgba(40,10,15,.88));color:#fff4db;font:500 1.15rem 'Playfair Display',serif;text-shadow:0 1px 3px #21090c}
 .photo-feature img{object-position:center}
 .photo-secondary img{object-position:center}
@@ -296,12 +301,8 @@ body{color:var(--ink);background:#fff1d8}
 <main>
 <section class="section center" id="invitation">
   <div class="wrap">
-    <div class="ganesha-panel" role="img" aria-label="Decorative Lord Ganesha illustration">
-      <svg class="ganesha-art" viewBox="0 0 240 240" aria-hidden="true">
-<defs><radialGradient id="ganeshaBg"><stop offset="0" stop-color="#8b2934"/><stop offset="1" stop-color="#3d101b"/></radialGradient><linearGradient id="ganeshaGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b7"/><stop offset=".48" stop-color="#d9ad55"/><stop offset="1" stop-color="#9a6426"/></linearGradient></defs>
-<circle cx="120" cy="120" r="111" fill="url(#ganeshaBg)" stroke="#c9a15a" stroke-width="2"/><circle cx="120" cy="120" r="100" fill="none" stroke="#e6c77f" stroke-width="1.2"/><circle cx="120" cy="120" r="92" fill="none" stroke="#c9a15a" stroke-width="1" stroke-dasharray="2 5"/>
-<g fill="none" stroke="url(#ganeshaGold)" stroke-width="2"><path d="M120 24l5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2z"/><path d="M120 185c-18 0-32 8-40 21m80 0c-8-13-22-21-40-21"/><path d="M38 120q12-8 0-18m164 18q-12-8 0-18"/></g>
-<g stroke="#8e5b27" stroke-width="2.5" stroke-linejoin="round"><path d="M86 75Q55 48 45 80Q39 105 75 115L87 104Z" fill="url(#ganeshaGold)"/><path d="M154 75Q185 48 195 80Q201 105 165 115L153 104Z" fill="url(#ganeshaGold)"/><path d="M83 73Q120 45 157 73L166 111Q163 151 120 164Q77 151 74 111Z" fill="url(#ganeshaGold)"/><path d="M94 79Q120 61 146 79L139 96Q120 107 101 96Z" fill="#f8e5ae"/><path d="M113 93Q99 110 111 123Q121 132 112 145Q105 157 121 166Q142 167 141 149Q140 136 128 132Q121 128 127 114L130 94" fill="#f5d98f" stroke-width="3.5"/><path d="M101 113Q94 119 88 113M139 113Q146 119 152 113" fill="none" stroke-width="2"/><ellipse cx="99" cy="112" rx="4" ry="5" fill="#50131e" stroke="none"/><ellipse cx="141" cy="112" rx="4" ry="5" fill="#50131e" stroke="none"/><path d="M108 128Q120 136 132 128" fill="none" stroke="#8e5b27" stroke-width="2"/><path d="M97 65L120 37L143 65L135 79H105Z" fill="url(#ganeshaGold)"/><circle cx="120" cy="31" r="6" fill="#f6df9b"/><path d="M82 166Q57 161 58 184Q60 204 91 197L120 216L149 197Q180 204 182 184Q183 161 158 166L145 179H95Z" fill="url(#ganeshaGold)"/><path d="M88 184Q120 199 152 184" fill="none" stroke="#8e5b27" stroke-width="2"/><path d="M73 141Q48 130 43 151Q42 171 72 169M167 141Q192 130 197 151Q198 171 168 169" fill="none" stroke="url(#ganeshaGold)" stroke-width="7" stroke-linecap="round"/></g><g fill="#f7df9b"><circle cx="49" cy="48" r="2"/><circle cx="191" cy="48" r="2"/><circle cx="49" cy="190" r="2"/><circle cx="191" cy="190" r="2"/></g></svg>
+    <div class="ganesha-panel" role="img" aria-label="Lord Ganesha in golden-orange artwork">
+      <img class="ganesha-art" src="./ganesha_wedding_web.png" alt="Golden-orange Lord Ganesha" width="329" height="368" fetchpriority="high">
       <div class="ganesha-caption">श्री गणेशाय नमः</div>
     </div>
     <div class="eyebrow">With divine blessings</div><div class="ornament">❦ ✧ ❦</div>
@@ -314,19 +315,19 @@ body{color:var(--ink);background:#fff1d8}
     <p style="color:var(--muted);font-style:italic">May all be happy, may all be free from illness, may all see goodness, and may none suffer.</p>
   </div>
 </section>
-<section class="wedding-gallery-section" aria-label="Wedding inspiration">
+<section class="wedding-gallery-section" aria-label="Mountains and wedding traditions">
   <div class="wrap center">
-    <div class="eyebrow">A celebration of love & tradition</div>
-    <h2 class="gallery-title">A Royal Himalayan Wedding</h2>
-    <p class="section-intro">A little glimpse of the warmth, colour and beauty that inspire our celebration.</p>
+    <div class="eyebrow">A celebration of love, heritage & blessings</div>
+    <h2 class="gallery-title">Where Mountains Meet Traditions</h2>
+    <p class="section-intro">A love story framed by the mountains, and a celebration blessed by tradition.</p>
     <div class="wedding-photo-gallery">
       <figure class="photo-feature">
-        <img src="https://travelogyindia.b-cdn.net/storage/app/upload/jw-marriott-mussoorie.jpg" alt="Floral wedding mandap with Himalayan mountain views" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Cdefs%3E%3ClinearGradient id=%22s%22 x2=%220%22 y2=%221%22%3E%3Cstop stop-color=%22%23f7c887%22/%3E%3Cstop offset=%221%22 stop-color=%22%23f8e9c8%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22900%22 height=%22600%22 fill=%22url(%23s)%22/%3E%3Cpath d=%22M0 400L130 190 250 320 390 120 540 320 690 165 900 390V600H0Z%22 fill=%22%238a7768%22/%3E%3Cpath d=%22M0 450L180 310 320 400 500 265 690 420 820 300 900 380V600H0Z%22 fill=%22%23b7a087%22/%3E%3Cpath d=%22M0 490Q250 460 450 495T900 490V600H0Z%22 fill=%22%235d6970%22/%3E%3Ctext x=%22450%22 y=%22555%22 text-anchor=%22middle%22 font-size=%2228%22 fill=%22%23fff4dc%22 font-family=%22Georgia%22%3EHimalayan Mountain Views%3C/text%3E%3C/svg%3E'">
-        <figcaption>Where traditions meet the mountains</figcaption>
+        <img src="./Graphite%20Mountain%20Wedding%20Portrait.png" alt="Monochrome graphite pencil portrait of the couple together in a Himalayan mountain landscape" loading="lazy" decoding="async">
+        <figcaption>Where Mountains Meet Traditions</figcaption>
       </figure>
       <figure class="photo-secondary">
-        <img src="https://shubhkaryavenues.com/assets/hero_crimson.png" alt="Royal red and gold wedding mandap" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 x2=%220%22 y2=%221%22%3E%3Cstop stop-color=%22%23500d1a%22/%3E%3Cstop offset=%221%22 stop-color=%22%237a1d2c%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22900%22 height=%22600%22 fill=%22url(%23b)%22/%3E%3Cpath d=%22M80 600V140Q450 -40 820 140V600%22 fill=%22none%22 stroke=%22%23d7b15e%22 stroke-width=%2220%22/%3E%3Cpath d=%22M120 600V180Q450 5 780 180V600%22 fill=%22none%22 stroke=%22%23f2d994%22 stroke-width=%226%22/%3E%3Cpath d=%22M120 180L230 280 340 180 450 280 560 180 670 280 780 180%22 fill=%22none%22 stroke=%22%23d7b15e%22 stroke-width=%2212%22/%3E%3Cpath d=%22M200 600V310M700 600V310M200 310Q450 180 700 310%22 fill=%22none%22 stroke=%22%23e9c875%22 stroke-width=%2216%22/%3E%3Cg fill=%22%23f5e2b7%22%3E%3Ccircle cx=%22200%22 cy=%22220%22 r=%2220%22/%3E%3Ccircle cx=%22235%22 cy=%22245%22 r=%2215%22/%3E%3Ccircle cx=%22700%22 cy=%22220%22 r=%2220%22/%3E%3Ccircle cx=%22665%22 cy=%22245%22 r=%2215%22/%3E%3C/g%3E%3Ctext x=%22450%22 y=%22535%22 text-anchor=%22middle%22 font-size=%2232%22 fill=%22%23f8e8c0%22 font-family=%22Georgia%22%3ERoyal Red &amp; Gold Mandap%3C/text%3E%3C/svg%3E'">
-        <figcaption>A celebration wrapped in maroon and gold</figcaption>
+        <img src="./Romantic%20Himalayan%20Devotion%20Under%20Divine%20Blessings.png" alt="Watercolor and colored-pencil wedding illustration of the couple in traditional Indian attire, with Hindu deities blessing them above the mountains" loading="lazy" decoding="async">
+        <figcaption>Mountains and Celebration Wrapped in Maroon and Gold</figcaption>
       </figure>
     </div>
   </div>
