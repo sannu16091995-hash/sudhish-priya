@@ -270,6 +270,23 @@ body{color:var(--ink);background:#fff1d8}
 .ganesha-art{filter:drop-shadow(0 4px 4px rgba(76,35,18,.16))}
 @media(max-width:720px){.hero{min-height:92svh;padding:42px 14px 60px}.hero-photo{background-image:linear-gradient(rgba(255,244,220,.76),rgba(255,244,220,.83)),url("https://travelogyindia.b-cdn.net/storage/app/upload/jw-marriott-mussoorie.jpg");background-position:center}.hero .fade-in{width:100%;margin:auto;padding:24px 13px}.hero h1{font-size:clamp(4.5rem,16vw,6.5rem)}#countdown .count-unit{min-width:58px;padding:10px 5px}.wedding-photo-gallery{grid-template-columns:1fr}.wedding-photo-gallery figure,.wedding-photo-gallery img{min-height:220px}}
 
+
+/* Matching updates from index.html: centered Ganesha artwork and wardrobe section */
+.ganesha-panel{display:grid;place-items:center}
+.ganesha-art{width:215px;height:215px;object-fit:contain;object-position:center;display:block;margin:0 auto;justify-self:center;align-self:center;border-radius:0}
+.wardrobe-section{background:linear-gradient(135deg,#170e10,#321116 48%,#170e10)!important;color:#f8e8c6;border-top:3px double #c7a35e;border-bottom:3px double #c7a35e}
+.wardrobe-section:before{color:#d0ad65}
+.wardrobe-section h2{color:#f5dfad!important}
+.wardrobe-section .section-intro{color:#e5d0a8}
+.wardrobe-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}
+.wardrobe-card{position:relative;padding:28px 24px;border:1px solid #c7a35e;background:linear-gradient(145deg,rgba(255,247,225,.08),rgba(255,247,225,.025));box-shadow:inset 0 0 0 5px rgba(199,163,94,.07);text-align:center}
+.wardrobe-card:before{content:"✦";position:absolute;top:-12px;left:50%;transform:translateX(-50%);padding:0 12px;background:#261014;color:#d7b86e}
+.wardrobe-card h3{font:500 1.6rem 'Playfair Display',serif;color:#f3d99a;margin:6px 0 14px}
+.wardrobe-card p{color:#f4e7ca;line-height:1.65;margin:8px 0}
+.wardrobe-card strong{color:#dfbd73}
+.wardrobe-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#d9b86c}
+@media(max-width:720px){.wardrobe-grid{grid-template-columns:1fr}.wardrobe-card{padding:25px 18px}.ganesha-art{width:185px;height:185px}}
+
 </style>
 </head>
 <body>
@@ -289,7 +306,7 @@ body{color:var(--ink);background:#fff1d8}
 <nav class="topnav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top" style="text-decoration:none">Sudhish & Priya</a>
-    <div class="navlinks"><a href="#invitation">Invitation</a><a href="#families">Families</a><a href="#events">Celebrations</a><a href="#venue">Venue</a></div>
+    <div class="navlinks"><a href="#invitation">Invitation</a><a href="#families">Families</a><a href="#events">Celebrations</a><a href="#wardrobe">Wardrobe</a><a href="#venue">Venue</a></div>
     <button class="music" id="musicToggle" type="button" aria-label="Play or pause wedding music" aria-pressed="false">MUSIC</button>
   </div>
 </nav>
@@ -357,6 +374,41 @@ body{color:var(--ink);background:#fff1d8}
   <p style="font-size:.9rem;color:var(--muted);margin-top:24px">All times are in Indian Standard Time (IST).</p>
  </div>
 </section>
+
+<section class="section center wardrobe-section" id="wardrobe">
+ <div class="wrap">
+  <div class="eyebrow">Dress for the celebration</div>
+  <h2>Wardrobe Guide</h2>
+  <p class="section-intro">A little guide to the colours and styles for each celebration. We can’t wait to celebrate with you.</p>
+  <div class="wardrobe-grid">
+   <article class="wardrobe-card">
+    <div class="wardrobe-label">02 December 2026 · 8 PM</div>
+    <h3>Mehandi / Cocktail</h3>
+    <p><strong>Theme</strong><br>Glitz &amp; Glam</p>
+    <p><strong>Venue</strong><br>SK Mohit Palace, Delhi</p>
+   </article>
+   <article class="wardrobe-card">
+    <div class="wardrobe-label">03 December 2026 · 9 AM</div>
+    <h3>Haldi</h3>
+    <p><strong>Theme</strong><br>Shades of Yellow</p>
+    <p><strong>Venue</strong><br>Residence, C-345 Yojana Vihar, Delhi</p>
+   </article>
+   <article class="wardrobe-card">
+    <div class="wardrobe-label">04 December 2026 · 8 PM</div>
+    <h3>Wedding</h3>
+    <p><strong>Theme</strong><br>Traditional Ethnic Wear</p>
+    <p><strong>Venue</strong><br>Kamboj Palace, Dehradun</p>
+   </article>
+   <article class="wardrobe-card">
+    <div class="wardrobe-label">04 December 2026 · 9:30 AM</div>
+    <h3>Departure of Baarat</h3>
+    <p><strong>Departure</strong><br>From our residence, C-345 Yojana Vihar, Delhi</p>
+    <p><strong>Breakfast</strong><br>9 AM</p>
+   </article>
+  </div>
+ </div>
+</section>
+
 <section class="section center" id="venue">
  <div class="wrap"><div class="eyebrow">Find your way to our celebrations</div><h2>Venue & Directions</h2><p class="section-intro">Tap a destination to open Google Maps directions from your current location. You can change the starting point in Google Maps.</p>
   <div class="intro-grid">
