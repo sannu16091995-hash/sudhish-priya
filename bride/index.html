@@ -41,7 +41,7 @@ a{color:inherit;text-underline-offset:4px}button{font:inherit;cursor:pointer}but
 #invitation .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
 #invitation .wrap>*{max-width:100%}
 .ganesha-panel{flex:none;align-self:center;margin-inline:auto}
-.ganesha-art{width:68%;height:74%;transform:none;overflow:visible;object-fit:initial;position:absolute;left:50%;top:48%;translate:-50% -50%;margin:0;filter:drop-shadow(0 4px 3px #8d5a2228)}
+.ganesha-art{width:68%;height:74%;transform:none;overflow:visible;object-fit:contain;object-position:center;position:absolute;left:50%;top:48%;translate:-50% -50%;margin:0;filter:drop-shadow(0 4px 3px #8d5a2228)}
 .ganesha-caption{left:50%;bottom:10px;transform:translateX(-50%)}
 .wedding-photo-gallery{grid-template-columns:1fr 1fr;align-items:center;gap:32px;width:100%;max-width:1080px;margin:42px auto 0}
 .wedding-photo-gallery figure:nth-child(2){margin-top:0}
@@ -150,7 +150,7 @@ html.cover-mode,html.cover-mode body{overflow:hidden}
 <section class="section center" id="invitation">
 <div class="wrap">
 <div aria-label="Lord Ganesha in golden-orange artwork" class="ganesha-panel" role="img">
-<svg aria-label="Golden-orange Lord Ganesha" class="ganesha-art" role="img" viewbox="98 60 210 286" xmlns="http://www.w3.org/2000/svg"><image height="368" href="../assets/ganesha_wedding_web.png" width="329" x="0" xlink:href="../assets/ganesha_wedding_web.png" y="0"/></svg>
+<img alt="Lord Ganesha" class="ganesha-art" decoding="async" fetchpriority="high" src="../assets/ganesha_wedding_web.png"/>
 <div class="ganesha-caption">श्री गणेशाय नमः</div>
 </div>
 <div class="eyebrow">With divine blessings</div><div class="ornament">❦ ✧ ❦</div>
